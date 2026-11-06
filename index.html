@@ -211,7 +211,7 @@
 
 <div class="container text-center">
     <a href="assets/img/portfolio/struktur.png"
-       data-gallery="portfolio-gallery-app"
+       data-gallery="gallery-struktur"
        class="glightbox">
         <img src="assets/img/portfolio/struktur.png"
              class="img-fluid"
@@ -628,14 +628,17 @@
           <!-- Email -->
           <div class="col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center"
-                 data-aos="fade-up" data-aos-delay="400">
+                  data-aos="fade-up" data-aos-delay="400">
 
-              <a href="122240286@student.upnyk.ac.id">
-                <i class="bi bi-envelope"></i>
-              </a>
+               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=122240094@student.upnyk.ac.id"
+                   target="_blank"
+                    class="email-icon-link">
+                  <i class="bi bi-envelope"></i>
+                </a>
 
-              <h3>Email Kami</h3>
-              <p style="text-align: justify;">122240286@student.upnyk.ac.id</p>
+                <h3>Email Kami</h3>
+
+                <p>122240094@student.upnyk.ac.id</p>
 
             </div>
           </div>
@@ -677,59 +680,65 @@
       <!-- End Contact Information -->
 
 
-      <!-- Contact Form -->
-      <div class="col-lg-6">
+      
+<!-- Contact Form -->
+<div class="col-lg-6">
 
-        <form action="forms/contact.php" method="post"
-              class="php-email-form"
-              data-aos="fade-up" data-aos-delay="200">
+  <form action="https://formspree.io/f/xrppdvrq"
+        method="POST"
+        class="contact-form"
+        data-aos="fade-up"
+        data-aos-delay="200">
 
-          <div class="row gy-4">
+    <div class="row gy-4">
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control"
-                     placeholder="Nama Anda" required>
-            </div>
-
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email"
-                     placeholder="Email Anda" required>
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subjek"
-                     placeholder="Subjek" required>
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="Pesan" rows="4"
-                        placeholder="Pesan" required></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-               Pesan mu akan terkirim. Terimakasih
-              </div>
-
-              <button type="submit">Kirim Pesan</button>
-
-            </div>
-
-          </div>
-
-        </form>
-
+      <!-- Nama -->
+      <div class="col-md-6">
+        <input type="text"
+               name="name"
+               class="form-control"
+               placeholder="Nama Anda"
+               required>
       </div>
-      <!-- End Contact Form -->
+
+      <!-- Email -->
+      <div class="col-md-6">
+        <input type="email"
+               name="email"
+               class="form-control"
+               placeholder="Email Anda"
+               required>
+      </div>
+
+      <!-- Subjek -->
+      <div class="col-md-12">
+        <input type="text"
+               name="_subject"
+               class="form-control"
+               placeholder="Subjek"
+               required>
+      </div>
+
+      <!-- Pesan -->
+      <div class="col-md-12">
+        <textarea name="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Pesan"
+                  required></textarea>
+      </div>
+
+      <!-- Tombol Kirim -->
+      <div class="col-md-12 text-center">
+        <button type="submit">Kirim Pesan</button>
+      </div>
 
     </div>
-  </div>
 
-</section>
-<!-- End Contact Section -->
+  </form>
+
+</div>
+<!-- End Contact Form -->
 
   </main>
 
@@ -780,7 +789,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
